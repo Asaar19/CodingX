@@ -1,0 +1,916 @@
+@import 'utilities.css';
+
+
+/* --------------CSS Reset--------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/* --------------Variables--------------- */
+:root{
+    --primary: #0BADD9;
+    --secondary: #767BFB;
+    --font: #232323;
+}
+/* --------------Header--------------- */
+
+header{
+    margin: 0px 50px;
+    margin-top: 30px;
+}
+.sec1 .container header .logo{
+    color: var(--primary);
+    font-size: 50px;
+    position: relative;
+    top: -150px;
+    animation: logo;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    
+    
+}
+
+nav ul li a{
+    padding: 5px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    background: var(--primary);
+    border-radius: 50px;
+    color: white;
+
+}
+.sec1 .container header label img{
+    width: 40px;
+    float: right;
+    cursor: pointer;
+    order: 1;
+}
+.sec1 .container header label{
+    order: 3;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* --------------Section#1--------------- */
+.sec1{
+    height: 843px;
+    background: var(--primary);
+
+}
+.container{
+    background: white;
+    width: 96%;
+    height: 93%;
+    margin: 0px auto;
+    border-radius: 30px;
+}
+.sec1 .container .main-1{
+    margin-top: 30px;
+    position: relative;
+    top: 70px;
+    animation: main-1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* padding: 0px 50px; */
+}
+.sec1 .container .main-1 div h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.sec1 .container .main-1 div p{
+    font-size: 20px;
+    line-height: 1.3;
+    font-style: italic;
+    color: var(--font);
+}
+.sec1 .container .main-1 div:nth-child(1){
+    /* margin-left: 50px; */
+    width: 50%;
+    padding: 0px 50px;
+}
+.sec1 .container .main-1 div:nth-child(2) img{
+    width: 750px;
+    margin-right: 50px;
+}
+.sec1 .container h4, h6{
+    margin-left: 60px;
+    color: var(--font);
+    font-weight: bold;
+}
+.sec1 .container .LBcolor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: red;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+.sec1 .container #ColR{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+.sec1 .container #Col1{
+    background: #E44CEB;
+}
+.sec1 .container #Col2{
+    background: #5073D0;
+}
+.sec1 .container #Col3{
+    background: #7a28d8;
+}
+.sec1 .container #Col4{
+    background: #414141;
+}
+.sec1 .container #ColR{
+    background: white;
+    border: 2px solid black;
+}
+
+
+/* --------------Section#2--------------- */
+.sec2{
+
+        height: 843px;
+        background: var(--secondary);
+}
+.sec2 .container h1{
+    margin: 40px auto 80px auto;
+}
+#SectionHeading1{
+    background: var(--secondary);
+    color: white;
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.sec2 .container .main-2 div:nth-child(1):hover{
+    background: #fff4ec;
+}
+.sec2 .container .main-2 div:nth-child(2):hover{
+    background: #e5f6ff;
+}
+.sec2 .container .main-2 div:nth-child(3):hover{
+    background: #fffbe7;
+}
+.sec2 .container .main-2 div:nth-child(4):hover{
+    background: #f0e9ff;
+}
+.sec2 .container .main-2 div:nth-child(1){
+    border: 4px solid #FF6D00;
+}
+.sec2 .container .main-2 div:nth-child(2){
+    border: 4px solid #039BE5;
+}
+.sec2 .container .main-2 div:nth-child(3){
+    border: 4px solid #EEC700;
+}
+.sec2 .container .main-2 div:nth-child(4){
+    border: 4px solid #673AB7;
+}
+.sec2 .container .main-2{
+    margin-top: 80px;
+}
+.sec2 .container .main-2 .div-1{
+    width: 23%;
+    height: 500px;
+    border-radius: 50px;
+    text-align:center;
+
+}
+
+.sec2 .container .main-2 .div-1 h3{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.sec2 .container .main-2 .div-1 img{
+    display: block;
+    margin: 20px auto 10px auto;
+    width: 250px;
+}
+.sec2 .container .main-2 .div-1 a{
+    display: inline-block;
+
+}
+
+.btn{
+    padding: 6px 12px;
+    border-radius: 15px;
+    background: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 20px auto 0px auto;
+    cursor: pointer;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+#btnHTML{
+    border: 2px solid #FF6D00;
+    color: rgb(47, 47, 47);
+    background: #fdebdd;
+    
+}
+#btnHTML:hover{
+    background: #FF6D00;
+    color: white;
+}
+#btnCSS{
+    border: 2px solid #039BE5;
+    color: rgb(47, 47, 47);
+    background: #cceeff;
+
+}
+#btnCSS:hover{
+    background: #039BE5;
+    color: white;
+}
+#btnJS{
+    border: 2px solid #FFD600;
+    color: rgb(47, 47, 47);
+    background: #fff8d3;
+
+}
+#btnJS:hover{
+    background: #FFD600;
+    color: black;
+}
+#btnBS{
+    border: 2px solid #673AB7;
+    color: rgb(47, 47, 47);
+    background: #d7c0ff;
+
+}
+#btnBS:hover{
+    background: #a47fe0;
+    color: black;
+}
+
+/* --------------Section#3--------------- */
+.sec3{
+
+    height: 843px;
+    background: var(--primary);
+}
+.sec3 .container h1{
+    margin: 40px auto 60px auto;
+}
+#SectionHeading2{
+    background: var(--primary);
+    color: white;
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sec3 .container div img{
+    width: 700px;
+    margin-left: 40px;
+}
+.sec3 .container div div h1{
+    color: var(--primary);
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.sec3 .container div div p{
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: var(--font);
+    font-style: italic;
+    padding: 0px 60px;
+}
+
+/* --------------Section#4--------------- */
+.sec4{
+
+    height: 843px;
+    background: var(--secondary);
+}
+.sec4 .container h1{
+    margin: 35px auto 80px auto;
+}
+#SectionHeading3{
+    background: var(--secondary);
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.sec4 .container div div img{
+    width: 900px;
+}
+
+.sec4 .container .div4{
+    margin-top: 20px;
+} 
+
+.sec4 .container h5{
+    margin-left: 30px;
+}
+/* .sec4 .container div:nth-child(2){
+    margin-right: 20px;
+} */
+.sec4 .container div div input{
+    border-radius: 50px;
+    width: 500px;
+    border: 4px solid var(--secondary);
+    height: 70px;
+    padding: 0px 30px;
+    margin: 2px 0px;
+    font-size: 18px;
+    outline: none;
+}
+.sec4 .container div div textarea{
+    padding: 30px;
+    border-radius: 30px;
+    margin: 2px 0px;
+    border: 4px solid var(--secondary);
+    width: 500px;
+    height: 250px;
+    font-size: 18px;
+    outline: none;
+}
+.Contactbtn button{
+    padding: 10px 20px;
+    width: 500px;
+    border-radius: 50px;
+    border: 4px solid var(--secondary);
+    background: #e5e6ff;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.Contactbtn button:hover{
+    background: var(--secondary);
+    color: white;
+
+}
+
+/* --------------Footer--------------- */
+.footer{
+    height: 80px;
+    background: black;
+}
+.footer h5{
+    color: white;
+    font-size: 18px;
+}
+
+/* --------------SendtoTop Button--------------- */
+.SendtoTop{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    opacity: 0.3;
+}
+.SendtoTop:hover{
+    opacity: 1;
+}
+
+/* --------------Animation--------------- */
+@keyframes logo {
+    0%{
+        top: -150px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+@keyframes main-1 {
+    0%{
+        top: 70px;
+    }   
+    100%{
+        top: 0px;
+    }
+}
+
+
+/* --------------Media Queries--------------- */
+
+@media (max-width: 1400px) {
+    .sec1 .container .main-1 div:nth-child(2) img{
+        width: 600px;
+    }
+    .sec1{
+        height: auto;
+        padding: 10px 0px;
+    }
+    .sec1 .container{
+        margin: 15px 22px;
+    }
+    .sec1 .container h6, .sec1 .container #ColR{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1160px){
+    .sec1 .container .main-1 div h1{
+        font-size: 25px;
+    }
+    .sec1 .container .main-1 div p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1200px) {
+    .sec1 .container .main-1 div:nth-child(2) img{
+        width: 500px;
+    }
+}
+@media (max-width: 1050px){
+    .sec1 .container .main-1{
+        flex-direction: column;
+    }
+    .sec1 .container .main-1 div:nth-child(1){
+        order: 2;
+        padding: 10px 0px;
+        width: 80%;
+    }
+
+    .sec1 .container .main-1 div:nth-child(2) img{
+        width: 600px;
+        margin-right: 0px;
+    }
+    .sec1 .container .main-1 div:nth-child(1){
+        margin-bottom: 30px;
+
+    }
+    nav ul li a{
+        padding: 0px;
+        padding: 2px 14px;
+    }
+    nav ul li a:hover{
+        background: var(--primary);
+        padding: 2px 14px;
+        border-radius: 50px;
+        color: white;
+    
+    }
+    nav ul li{
+        padding: 0px;
+        
+    }
+    .sec1 .container h6, .sec1 .container #ColR{
+        margin-bottom: 20px;
+    }
+    .sec1 .container .left-bottom{
+        margin-left: 30px;
+        font-size: 12px;
+
+    }
+    .sec1 .container .left-bottom div{
+        height: 12px;
+        width: 12px;
+    }
+
+    
+
+}
+
+@media (max-width: 850px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 55%;
+        height: 100vh;
+        background: rgba(3, 3, 3, 0.8);
+        left: -100%;
+        top: 0px;
+        text-align: center;
+        z-index: 999;
+        transition: 0.3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 100px 0px;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 25px;
+    }
+
+    #check:checked ~ ul{
+        left: 0px;
+    }
+    .sec1 .container header label{
+        display: block;
+    }
+}
+
+@media (max-width: 676px){
+    ul{
+        width: 40%;
+        height: 150vh;
+    }
+}
+
+@media (max-width: 493px){
+    ul{
+        width: 30%;
+        height: 150vh;
+    }
+    .sec1 .container div:nth-child(3),.sec1 .container div:nth-child(4){
+        justify-content: center;
+    }
+    .sec1 .container h4, h6{
+        margin-left: 0px;
+    }
+    
+}
+
+@media (max-width: 393px){
+    ul{
+        width: 50%;
+        height: 150vh;
+    }
+}
+
+@media (max-width: 685px){
+    .sec1 .container .main-1 div:nth-child(2) img{
+        width: 400px;
+    }
+
+.sec1 .container .main-1 div:nth-child(2) img{
+    width: 300px;
+}
+}
+
+@media (max-width: 435px){
+    .sec1 .container .main-1 div:nth-child(2) img{
+        width: 250px;
+    }
+    .sec1 .container header{
+        margin: 20px 24px 0px 23px;
+    }
+    .sec1 .container header .logo{
+        font-size: 40px;
+
+    }
+    .sec1 .container .left-bottom{
+        margin-left: 0px;
+    }
+}
+
+/* --------------Media Queries for Section#2--------------- */
+@media (max-width: 1388px) {
+    .sec2{
+        height: auto;
+    }
+    .sec2 .container{
+        margin: 15px 22px;
+    }
+    .sec2 .container #SectionHeading1{
+        font-size: 20px;
+    }
+    .sec2 .container .main-2 .div-1{
+        height: auto;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+}
+    @media (max-width: 1155px){
+        .sec2 .container .main-2 .div-1{
+            width: 40%;
+        }
+        .sec2 .container .main-2{
+            flex-wrap: wrap;
+
+        }
+    }
+
+
+@media (max-width: 905px){
+    .sec2 .container #SectionHeading1{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 688px){
+    .sec2 .container .main-2 .div-1 img{
+        width: 70%;
+    }
+}
+
+@media (max-width: 630px){
+    .sec2 .container .main-2{
+        flex-direction: column;
+    }
+    .sec2 .container .main-2 .div-1{
+        width: 80%;
+    }
+}
+
+/* --------------Media Queries for Section#3--------------- */
+@media (max-width: 1388px) {
+    .sec3{
+        height: auto;
+    }
+
+    .sec3 .container{
+        margin: 15px 22px;
+    }
+    .sec3 .container div div img{
+        width: 600px;
+        margin-left: 10px;
+        
+    }
+    .sec3 .container div:nth-child(2) h1{
+        font-size: 60px;
+    }
+    .sec3 .container div{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1230px){
+    .sec3 .container div div img{
+        width: 500px;
+        margin-left: 10px;
+        
+    }
+}
+
+
+
+
+@media (max-width: 1050px){
+    .sec3 .container div div img{
+        width: 300px;
+        margin-left: 0px;
+        
+    }
+    .sec3 .container div{
+        flex-direction: column;
+    }
+    .sec3 .container div:nth-child(2) p{
+        margin-bottom: 30px;
+    }
+    .sec3 .container div{
+        margin-bottom: 0px;
+    }
+    .sec3 .container h1{
+        margin: 10px auto 60px auto;
+    }
+    .sec3 .container div div p{
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+        color: var(--font);
+        font-size: 15px;
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 380px){
+    .sec3 .container div div img{
+        width: 220px;
+        margin-left: 0px;
+        
+    }
+}
+
+/* --------------Media Queries for Section#4--------------- */
+
+@media (max-width: 1530px){
+    .sec4{
+        height: auto;
+    }
+    .sec4 .container{
+        margin: 15px 22px;
+    }
+    
+    .sec4 .container .div4:nth-child(1){
+        width: 40%;
+    }
+    .sec4 .container .div4 div img{
+        width: 680px;
+        margin: 20px 40px;
+    }
+    .sec4 .container div div input{
+        width: 400px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 400px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1280px){
+    .sec4 .container .div4 div img{
+        width: 600px;
+        margin-left: 20px;
+    }
+
+    .sec4 .container div div input{
+        width: 350px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 350px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 350px;
+    }
+}
+@media (max-width: 1065px){
+    .sec4 .container .div4{
+        flex-direction: column;
+    }
+    .sec4 .container .div4{
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    .sec4 .container div div input{
+        width: 600px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 600px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 600px;
+    }
+}
+@media (max-width: 730px){
+    .sec4 .container .div4 div img{
+        width: 500px;
+    }
+    .sec4 .container div div input{
+        width: 500px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 500px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 500px;
+    }
+
+}
+@media (max-width: 600px){
+    .sec4 .container .div4 div img{
+        width: 400px;
+    }
+    .sec4 .container div div input{
+        width: 400px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 400px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 400px;
+    }
+
+}
+@media (max-width: 500px){
+    .sec4 .container .div4 div img{
+        width: 300px;
+    }
+    .sec4 .container div div input{
+        width: 300px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 300px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 300px;
+    }
+
+}
+@media (max-width: 400px){
+    .sec4 .container .div4 div img{
+        width: 230px;
+    }
+    .sec4 .container div div input{
+        width: 230px;
+        margin: 2px 10px;
+    }
+    .sec4 .container div div textarea{
+        margin: 2px 10px;
+        width: 230px;
+    }
+    .Contactbtn button{
+        margin: 2px 10px;
+        width: 230px;
+    }
+    .sec4 .container h5:nth-child(3),
+    .sec4 .container h5:nth-child(4){
+        display: flex;
+        justify-content: center;
+    }
+    .sec4 .container h5{
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 350px){
+    .sec4 .container .div4 div img{
+        width: 200px;
+        margin: -10px 0px 10px 0px;
+        padding: 0px;
+    }
+}
+
+/* --------------Media Queries for footer--------------- */
+/* @media (max-width: 350px){
+    footer{
+        margin: 0px 110px;
+    }
+} */
+/* @media (max-width: 600px){
+    .sec4 .container .div4 div img{
+        width: 400px;
+    }
+
+    .sec4 .container .div4:nth-child(2) form input,
+    .sec4 .container .div4:nth-child(2) form textarea,
+    .sec4 .container .div4 .Contactbtn button{
+        width: 400px;
+
+    }
+
+    .sec4 .container h5:nth-child(3),
+    .sec4 .container h5:nth-child(4){
+        display: flex;
+        justify-content: center;
+    }
+    .sec4 .container h5:nth-child(3){
+        margin-top: 20px;
+    }
+    .sec4 .container h5:nth-child(4){
+        margin-bottom: 10px;
+    }
+    .sec4 .container h5{
+        margin-left: 0px;
+    }
+} */
+
+/* @media (max-width: 492px){
+    .sec4 .container .div4 div img{
+        width: 300px;
+    }
+
+    .sec4 .container .div4:nth-child(2) form input,
+    .sec4 .container .div4:nth-child(2) form textarea,
+    .sec4 .container .div4 .Contactbtn button{
+        width: 300px;
+    }
+}
+@media (max-width: 390px){
+    .sec4 .container .div4 div img{
+        width: 250px;
+    }
+
+    .sec4 .container .div4:nth-child(2) form input,
+    .sec4 .container .div4:nth-child(2) form textarea,
+    .sec4 .container .div4 .Contactbtn button{
+        width: 250px;
+    }
+} */
